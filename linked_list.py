@@ -95,7 +95,7 @@ def index(lst, value):
     """
     try:
         for i in range(len(lst)):
-            if lst.value[i] == value
+            if lst.value[i] == value:
                 return i
             else:
                 raise ValueError

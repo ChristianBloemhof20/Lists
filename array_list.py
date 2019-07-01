@@ -108,7 +108,8 @@ def add(lst, idx, value):
         n_lst.array = lst.array[:]
         lst.array = n_lst.array
         lst.capacity *= 2
-    # shift everything from "idx" to "lst.size -1" right by one
+    for i in range(idx, lst.size - 1):
+        lst.array[i - 1] = lst.array[i]
     lst.array[idx] = value
     lst.size += 1
     return lst
@@ -125,6 +126,7 @@ def remove(lst, idx):
     :raise IndexError: If the index is out-of-bounds
     :return: The value that was removed
     """
-    # shift everything from "idx + 1" to "lst.size - 1" left by one
+    for i in range(idx + 1, lst.size - 1):
+        lst.array[i] = lst.array[i - 1]
     lst.size -= 1
     return lst
