@@ -16,11 +16,15 @@ class List:
 
     def __eq__(self, other):
         # TODO: Implement this method.
-        pass
+        for i in range(len(self.array)):
+            if self.array[i] != other.array[i]:
+                return False
+        return type(self) == type(other) and \
+               self.size == other.size
 
     def __repr__(self):
         # TODO: Implement this method.
-        pass
+        return 'List(Size = {}, Capacity = {})'.format(self.size, self.capacity)
 
 
 def size(lst):
@@ -31,7 +35,8 @@ def size(lst):
     :param lst: A List
     :return: The size of the list
     """
-    pass
+    size = lst.size
+    return size
 
 
 def get(lst, idx):
@@ -44,7 +49,8 @@ def get(lst, idx):
     :return: The element in the list at the index
     :raise IndexError: If the index is out-of-bounds
     """
-    pass
+    value = lst.array[idx]
+    return value
 
 
 def set(lst, idx, value):
@@ -57,7 +63,8 @@ def set(lst, idx, value):
     :param value: A value to place into the list
     :raise IndexError: If the index is out-of-bounds
     """
-    pass
+    lst.array[idx] = value
+    return lst.array[idx]
 
 
 def index(lst, value):
@@ -70,7 +77,18 @@ def index(lst, value):
     :return: The index of the first occurrence of the value in the list
     :raise ValueError: If the value is not in the list
     """
-    pass
+    i = 0
+    while True:
+        try:
+            if lst.array[i] == value:
+                return i
+            elif i > lst.capacity:
+                raise ValueError
+            else:
+                i += 1
+        except ValueError:
+            print("Value not in list")
+
 
 
 def add(lst, idx, value):
@@ -85,7 +103,16 @@ def add(lst, idx, value):
     :param value: A value to add to the list
     :raise IndexError: If the index is out-of-bounds
     """
-    pass
+    if idx > len(lst.array):
+        n_lst = []*2*idx
+        n_lst.array = lst.array[:]
+        lst.array = n_lst.array
+        lst.capacity *= 2
+    # shift everything from "idx" to "lst.size -1" right by one
+    lst.array[idx] = value
+    lst.size += 1
+    return lst
+
 
 
 def remove(lst, idx):
@@ -98,4 +125,6 @@ def remove(lst, idx):
     :raise IndexError: If the index is out-of-bounds
     :return: The value that was removed
     """
-    pass
+    # shift everything from "idx + 1" to "lst.size - 1" left by one
+    lst.size -= 1
+    return lst

@@ -14,11 +14,13 @@ class List:
 
     def __eq__(self, other):
         # TODO: Implement this method.
-        pass
+        return type(self) == type(other) and \
+               self.size == other.size and \
+               self.head == other.head
 
     def __repr__(self):
         # TODO: Implement this method.
-        pass
+        return 'List(Head = {}, Size = {})'.format(self.head, self.size)
 
 
 class Node:
@@ -32,11 +34,13 @@ class Node:
 
     def __eq__(self, other):
         # TODO: Implement this method.
-        pass
+        return type(self) == type(other) and \
+               self.value == other.value and \
+               self.next == other.next
 
     def __repr__(self):
         # TODO: Implement this method.
-        pass
+        return 'Node(Value = {}, Next = {}'.format(self.value, self.next)
 
 
 def size(lst):
@@ -47,7 +51,8 @@ def size(lst):
     :param lst: A List
     :return: The size of the list
     """
-    pass
+    size = lst.size
+    return size
 
 
 def get(lst, idx):
@@ -60,7 +65,8 @@ def get(lst, idx):
     :return: The element in the list at the index
     :raise IndexError: If the index is out-of-bounds
     """
-    pass
+    value = lst.value[idx]
+    return value
 
 
 def set(lst, idx, value):
@@ -73,7 +79,8 @@ def set(lst, idx, value):
     :param value: A value to place into the list
     :raise IndexError: If the index is out-of-bounds
     """
-    pass
+    lst.value[idx] = value
+    return lst.value[idx]
 
 
 def index(lst, value):
@@ -86,7 +93,14 @@ def index(lst, value):
     :return: The index of the first occurrence of the value in the list
     :raise ValueError: If the value is not in the list
     """
-    pass
+    try:
+        for i in range(len(lst)):
+            if lst.value[i] == value
+                return i
+            else:
+                raise ValueError
+    except ValueError:
+        return False
 
 
 def add(lst, idx, value):
@@ -100,7 +114,15 @@ def add(lst, idx, value):
     :param value: A value to add to the list
     :raise IndexError: If the index is out-of-bounds
     """
-    pass
+    if lst.value[idx] == lst.head:
+        lst.next[idx] = lst.head
+        lst.head = value
+    else:
+        for i in range(len(lst)):
+            if i == (idx - 1):
+                lst.next[idx] = lst.next[idx - 1]
+                lst.next[idx - 1] = lst.value[idx]
+    return lst
 
 
 def remove(lst, idx):
@@ -113,4 +135,10 @@ def remove(lst, idx):
     :raise IndexError: If the index is out-of-bounds
     :return: The value that was removed
     """
-    pass
+    if lst.value[idx] == lst.head:
+        lst.head = lst.next[idx]
+    else:
+        for i in range(len(lst)):
+            if i == (idx - 1):
+                lst.next[idx - 1] = lst.next[idx]
+    return lst
