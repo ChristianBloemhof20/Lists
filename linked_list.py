@@ -65,7 +65,10 @@ def get(lst, idx):
     :return: The element in the list at the index
     :raise IndexError: If the index is out-of-bounds
     """
-    value = lst.value[idx]
+    cur = lst.head
+    for i in range(idx - 1):
+        cur = cur.next
+    value = lst.next
     return value
 
 
@@ -79,8 +82,11 @@ def set(lst, idx, value):
     :param value: A value to place into the list
     :raise IndexError: If the index is out-of-bounds
     """
-    lst.value[idx] = value
-    return lst.value[idx]
+    cur = lst.head
+    for i in range(idx - 1):
+        cur = cur.next
+    cur = value
+    return cur
 
 
 def index(lst, value):
@@ -115,16 +121,16 @@ def add(lst, idx, value):
     :raise IndexError: If the index is out-of-bounds
     """
     try:
-        if lst.value[idx] == lst.head:
-            lst.next[idx] = lst.head
+        if idx == 0:
+            lst.next = lst.head
             lst.head = value
         elif idx > lst.size or idx < 0:
             raise ValueError
         else:
-            for i in range(len(lst)):
-                if i == (idx - 1):
-                    lst.next[idx] = lst.next[idx - 1]
-                    lst.next[idx - 1] = lst.value[idx]
+            for i in range(idx - 1):
+                lst.next[idx] = lst.next[idx - 1]
+                lst.next[idx - 1] = lst.value[idx]
+        lst.size += 1
         return lst
     except ValueError:
         return False
@@ -141,14 +147,15 @@ def remove(lst, idx):
     :return: The value that was removed
     """
     try:
-        if lst.value[idx] == lst.head:
-            lst.head = lst.next[idx]
+        if idx == 0:
+            lst.head = lst.next
         elif idx > lst.size or idx < 0:
             raise ValueError
         else:
             for i in range(len(lst)):
                 if i == (idx - 1):
-                    lst.next[idx - 1] = lst.next[idx]
+                    lst.next[idx-1] = lst.next[idx]
+        lst.size -= 1
         return lst.value[idx]
     except ValueError:
         print("The index is out-of-bounds")

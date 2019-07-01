@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf82f491-17e7-47bc-a4a8-c1b9f765a614" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/array_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/array_list.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/linked_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/linked_list.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/list_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/list_tests.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,20 +12,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/array_list.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="812">
+            <state relative-caret-position="929">
               <caret line="132" column="16" selection-start-line="132" selection-start-column="16" selection-end-line="132" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/linked_list.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2235">
-              <caret line="149" column="34" lean-forward="true" selection-start-line="149" selection-start-column="34" selection-end-line="149" selection-end-column="34" />
+            <state relative-caret-position="363">
+              <caret line="131" lean-forward="true" selection-start-line="131" selection-end-line="131" />
             </state>
           </provider>
         </entry>
@@ -36,7 +34,7 @@
         <entry file="file://$PROJECT_DIR$/list_tests.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+              <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
               <folding>
                 <element signature="e#66#81#0" expanded="true" />
               </folding>
@@ -53,8 +51,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/array_list.py" />
-        <option value="$PROJECT_DIR$/linked_list.py" />
         <option value="$PROJECT_DIR$/list_tests.py" />
+        <option value="$PROJECT_DIR$/linked_list.py" />
       </list>
     </option>
   </component>
@@ -151,25 +149,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_list_tests_py - 2019.07.01 at 10h 25m 09s.xml">
-      <configuration name="Unittests in list_tests.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_list_tests_py - 2019.07.01 at 10h 30m 59s.xml">
-      <configuration name="Unittests in list_tests.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_list_tests_py - 2019.07.01 at 10h 33m 52s.xml">
-      <configuration name="Unittests in list_tests.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_list_tests_py - 2019.07.01 at 10h 36m 23s.xml">
-      <configuration name="Unittests in list_tests.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_list_tests_py - 2019.07.01 at 10h 36m 36s.xml">
-      <configuration name="Unittests in list_tests.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_list_tests_py - 2019.07.01 at 10h 38m 51s.xml">
-      <configuration name="Unittests in list_tests.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_list_tests_py - 2019.07.01 at 10h 43m 45s.xml">
+      <configuration name="Unittests in list_tests.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_list_tests_py - 2019.07.01 at 10h 52m 18s.xml">
+      <configuration name="Unittests in list_tests.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_list_tests_py - 2019.07.01 at 10h 53m 17s.xml">
+      <configuration name="Unittests in list_tests.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_list_tests_py - 2019.07.01 at 10h 55m 53s.xml">
+      <configuration name="Unittests in list_tests.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_list_tests_py - 2019.07.01 at 10h 56m 43s.xml">
+      <configuration name="Unittests in list_tests.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_list_tests_py - 2019.07.01 at 10h 59m 00s.xml">
+      <configuration name="Unittests in list_tests.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_list_tests_py - 2019.07.01 at 11h 02m 08s.xml">
+      <configuration name="Unittests in list_tests.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_list_tests_py - 2019.07.01 at 11h 02m 25s.xml">
+      <configuration name="Unittests in list_tests.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_list_tests_py - 2019.07.01 at 11h 05m 04s.xml">
+      <configuration name="Unittests in list_tests.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_list_tests_py - 2019.07.01 at 11h 06m 38s.xml">
       <configuration name="Unittests in list_tests.py" configurationId="tests" />
     </history-entry>
   </component>
@@ -209,10 +216,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/array_list.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="929">
+          <caret line="132" column="16" selection-start-line="132" selection-start-column="16" selection-end-line="132" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/list_tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
           <folding>
             <element signature="e#66#81#0" expanded="true" />
           </folding>
@@ -221,15 +235,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/linked_list.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2235">
-          <caret line="149" column="34" lean-forward="true" selection-start-line="149" selection-start-column="34" selection-end-line="149" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/array_list.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="812">
-          <caret line="132" column="16" selection-start-line="132" selection-start-column="16" selection-end-line="132" selection-end-column="16" />
+        <state relative-caret-position="363">
+          <caret line="131" lean-forward="true" selection-start-line="131" selection-end-line="131" />
         </state>
       </provider>
     </entry>
