@@ -6,7 +6,7 @@
 class List:
     """ An ordered collection of elements """
 
-    def __init__(self, capacity = 16):
+    def __init__(self, capacity = 4):
         # The backing array:
         self.array = [None] * capacity
         # The size of the backing array:
@@ -19,8 +19,7 @@ class List:
         for i in range(self.size):
             if self.array[i] != other.array[i]:
                 return False
-        return type(self) == type(other) and \
-               self.size == other.size
+        return type(self) == type(other) and self.size == other.size
 
     def __repr__(self):
         # TODO: Implement this method.
@@ -79,15 +78,12 @@ def index(lst, value):
     """
     i = 0
     while True:
-        try:
             if lst.array[i] == value:
                 return i
             elif i > lst.capacity:
                 raise ValueError
             else:
                 i += 1
-        except ValueError:
-            print("Value not in list")
 
 
 
@@ -113,7 +109,6 @@ def add(lst, idx, value):
     lst.array[idx] = value
     lst.size += 1
     return lst
-
 
 
 def remove(lst, idx):

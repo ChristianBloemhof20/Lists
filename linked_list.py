@@ -97,12 +97,12 @@ def index(lst, value):
     :return: The index of the first occurrence of the value in the list
     :raise ValueError: If the value is not in the list
     """
-
-    for i in range(len(lst)):
-        if lst.value[i] == value:
+    cur = lst.head
+    for i in range(lst.size):
+        cur = cur.next
+        if cur.value == value:
             return i
-        else:
-            raise ValueError
+    raise ValueError
 
 
 def add(lst, idx, value):
