@@ -6,8 +6,8 @@ import unittest
 
 # TODO: Leave one of these commented and one uncommented, depending on which
 #       implementation you want to test.
-from array_list import *
-# from linked_list import *
+# from array_list import *
+from linked_list import *
 
 
 class TestList(unittest.TestCase):

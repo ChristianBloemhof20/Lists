@@ -16,7 +16,7 @@ class List:
 
     def __eq__(self, other):
         # TODO: Implement this method.
-        for i in range(len(self.array)):
+        for i in range(self.size):
             if self.array[i] != other.array[i]:
                 return False
         return type(self) == type(other) and \
@@ -126,7 +126,8 @@ def remove(lst, idx):
     :raise IndexError: If the index is out-of-bounds
     :return: The value that was removed
     """
+    value = lst.array[idx]
     for i in range(idx + 1, lst.size - 1):
         lst.array[i] = lst.array[i - 1]
     lst.size -= 1
-    return lst
+    return value

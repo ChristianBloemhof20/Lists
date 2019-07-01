@@ -114,15 +114,20 @@ def add(lst, idx, value):
     :param value: A value to add to the list
     :raise IndexError: If the index is out-of-bounds
     """
-    if lst.value[idx] == lst.head:
-        lst.next[idx] = lst.head
-        lst.head = value
-    else:
-        for i in range(len(lst)):
-            if i == (idx - 1):
-                lst.next[idx] = lst.next[idx - 1]
-                lst.next[idx - 1] = lst.value[idx]
-    return lst
+    try:
+        if lst.value[idx] == lst.head:
+            lst.next[idx] = lst.head
+            lst.head = value
+        elif idx > lst.size or idx < 0:
+            raise ValueError
+        else:
+            for i in range(len(lst)):
+                if i == (idx - 1):
+                    lst.next[idx] = lst.next[idx - 1]
+                    lst.next[idx - 1] = lst.value[idx]
+        return lst
+    except ValueError:
+        return False
 
 
 def remove(lst, idx):
@@ -135,10 +140,17 @@ def remove(lst, idx):
     :raise IndexError: If the index is out-of-bounds
     :return: The value that was removed
     """
-    if lst.value[idx] == lst.head:
-        lst.head = lst.next[idx]
-    else:
-        for i in range(len(lst)):
-            if i == (idx - 1):
-                lst.next[idx - 1] = lst.next[idx]
-    return lst
+    try:
+        if lst.value[idx] == lst.head:
+            lst.head = lst.next[idx]
+        elif idx > lst.size or idx < 0:
+            raise ValueError
+        else:
+            for i in range(len(lst)):
+                if i == (idx - 1):
+                    lst.next[idx - 1] = lst.next[idx]
+        return lst.value[idx]
+    except ValueError:
+        print("The index is out-of-bounds")
+        return lst
+
