@@ -66,7 +66,7 @@ def get(lst, idx):
     :raise IndexError: If the index is out-of-bounds
     """
     cur = lst.head
-    for i in range(idx - 1):
+    for i in range(idx):
         cur = cur.next
     return cur.value
 
@@ -82,7 +82,7 @@ def set(lst, idx, value):
     :raise IndexError: If the index is out-of-bounds
     """
     cur = lst.head
-    for i in range(idx - 1):
+    for i in range(idx):
         cur = cur.next
     cur.value = value
 
@@ -147,6 +147,7 @@ def remove(lst, idx):
     """
     cur = lst.head
     if idx == 0:
+        value = cur.next.value
         lst.head = cur.next
     elif idx > lst.size or idx < 0:
         raise ValueError
@@ -156,5 +157,5 @@ def remove(lst, idx):
         value = cur.next.value
         cur.next = cur.next.next
         lst.size -= 1
-        return value
+    return value
 
