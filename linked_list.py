@@ -68,8 +68,7 @@ def get(lst, idx):
     cur = lst.head
     for i in range(idx - 1):
         cur = cur.next
-    value = lst.next
-    return value
+    return cur.value
 
 
 def set(lst, idx, value):
@@ -85,8 +84,7 @@ def set(lst, idx, value):
     cur = lst.head
     for i in range(idx - 1):
         cur = cur.next
-    cur = value
-    return cur
+    cur.value = value
 
 
 def index(lst, value):
@@ -99,14 +97,12 @@ def index(lst, value):
     :return: The index of the first occurrence of the value in the list
     :raise ValueError: If the value is not in the list
     """
-    try:
-        for i in range(len(lst)):
-            if lst.value[i] == value:
-                return i
-            else:
-                raise ValueError
-    except ValueError:
-        return False
+
+    for i in range(len(lst)):
+        if lst.value[i] == value:
+            return i
+        else:
+            raise ValueError
 
 
 def add(lst, idx, value):
@@ -120,20 +116,23 @@ def add(lst, idx, value):
     :param value: A value to add to the list
     :raise IndexError: If the index is out-of-bounds
     """
-    try:
-        if idx == 0:
-            lst.next = lst.head
-            lst.head = value
-        elif idx > lst.size or idx < 0:
-            raise ValueError
-        else:
-            for i in range(idx - 1):
-                lst.next[idx] = lst.next[idx - 1]
-                lst.next[idx - 1] = lst.value[idx]
+
+    node = Node(value, None)
+    if idx == 0:
+        node.next = lst.head
+        lst.head = node
+        lst.size += 1
+    elif idx > lst.size or idx < 0:
+        raise IndexError
+    else:
+        cur = lst.head
+        for i in range(idx - 1):
+            cur = cur.next
+        node.next = cur.next
+        cur.next = node
         lst.size += 1
         return lst
-    except ValueError:
-        return False
+
 
 
 def remove(lst, idx):
@@ -146,18 +145,16 @@ def remove(lst, idx):
     :raise IndexError: If the index is out-of-bounds
     :return: The value that was removed
     """
-    try:
-        if idx == 0:
-            lst.head = lst.next
-        elif idx > lst.size or idx < 0:
-            raise ValueError
-        else:
-            for i in range(len(lst)):
-                if i == (idx - 1):
-                    lst.next[idx-1] = lst.next[idx]
+    cur = lst.head
+    if idx == 0:
+        lst.head = cur.next
+    elif idx > lst.size or idx < 0:
+        raise ValueError
+    else:
+        for i in range(idx - 1):
+            cur = cur.next
+        value = cur.next.value
+        cur.next = cur.next.next
         lst.size -= 1
-        return lst.value[idx]
-    except ValueError:
-        print("The index is out-of-bounds")
-        return lst
+        return value
 

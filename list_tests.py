@@ -22,7 +22,17 @@ class TestList(unittest.TestCase):
         self.assertEqual(size(lst), 3)
         self.assertEqual(get(lst, 1), 1)
         self.assertEqual(remove(lst, 1), 1)
+'''
+    def test_remove(self):
+        lst = List()
 
+        add(lst, 0, 2)
+        add(lst, 1, 1)
+        add(lst, 3, 2)
+        remove(lst, 1)
+
+        self.assertEqual(size(lst), 2)
+'''
 
 if __name__ == "__main__":
     unittest.main()
