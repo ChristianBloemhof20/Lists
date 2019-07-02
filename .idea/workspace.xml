@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf82f491-17e7-47bc-a4a8-c1b9f765a614" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/array_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/array_list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linked_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/linked_list.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/list_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/list_tests.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/array_list.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1533">
-              <caret line="103" column="22" selection-start-line="103" selection-start-column="22" selection-end-line="103" selection-end-column="22" />
+            <state relative-caret-position="375">
+              <caret line="127" column="39" lean-forward="true" selection-start-line="127" selection-start-column="39" selection-end-line="127" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -25,38 +26,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/linked_list.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="132" column="18" lean-forward="true" selection-start-line="132" selection-start-column="18" selection-end-line="132" selection-end-column="18" />
+            <state relative-caret-position="240">
+              <caret line="149" column="17" selection-start-line="149" selection-start-column="17" selection-end-line="149" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/list_tests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="59" selection-start-line="59" selection-end-line="59" />
+            <state relative-caret-position="278">
+              <caret line="24" column="43" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
               <folding>
                 <element signature="e#66#81#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="662" selection-start-line="662" selection-end-line="662" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/suite.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="121" selection-start-line="121" selection-end-line="121" />
             </state>
           </provider>
         </entry>
@@ -69,9 +52,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/array_list.py" />
         <option value="$PROJECT_DIR$/linked_list.py" />
         <option value="$PROJECT_DIR$/list_tests.py" />
-        <option value="$PROJECT_DIR$/array_list.py" />
       </list>
     </option>
   </component>
@@ -168,34 +151,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_list_tests_py - 2019.07.02 at 08h 12m 57s.xml">
+    <history-entry file="Unittests_in_list_tests_py - 2019.07.02 at 08h 53m 35s.xml">
       <configuration name="Unittests in list_tests.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_list_tests_py - 2019.07.02 at 08h 13m 07s.xml">
+    <history-entry file="Unittests_in_list_tests_py - 2019.07.02 at 08h 53m 41s.xml">
       <configuration name="Unittests in list_tests.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_list_tests_py - 2019.07.02 at 08h 13m 34s.xml">
+    <history-entry file="Unittests_in_list_tests_py - 2019.07.02 at 08h 53m 50s.xml">
       <configuration name="Unittests in list_tests.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_list_tests_py - 2019.07.02 at 08h 24m 20s.xml">
+    <history-entry file="Unittests_in_list_tests_py - 2019.07.02 at 08h 54m 13s.xml">
       <configuration name="Unittests in list_tests.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_list_tests_py - 2019.07.02 at 08h 24m 38s.xml">
+    <history-entry file="Unittests_in_list_tests_py - 2019.07.02 at 08h 54m 51s.xml">
       <configuration name="Unittests in list_tests.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_list_tests_py - 2019.07.02 at 08h 26m 27s.xml">
+    <history-entry file="Unittests_in_list_tests_py - 2019.07.02 at 08h 55m 04s.xml">
       <configuration name="Unittests in list_tests.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_list_tests_py - 2019.07.02 at 08h 26m 45s.xml">
+    <history-entry file="Unittests_in_list_tests_py - 2019.07.02 at 08h 55m 25s.xml">
       <configuration name="Unittests in list_tests.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_list_tests_py - 2019.07.02 at 08h 27m 30s.xml">
+    <history-entry file="Unittests_in_list_tests_py - 2019.07.02 at 08h 55m 41s.xml">
       <configuration name="Unittests in list_tests.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_list_tests_py - 2019.07.02 at 08h 30m 02s.xml">
+    <history-entry file="Unittests_in_list_tests_py - 2019.07.02 at 08h 58m 27s.xml">
       <configuration name="Unittests in list_tests.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_list_tests_py - 2019.07.02 at 08h 30m 06s.xml">
+    <history-entry file="Unittests_in_list_tests_py - 2019.07.02 at 08h 58m 30s.xml">
       <configuration name="Unittests in list_tests.py" configurationId="tests" />
     </history-entry>
   </component>
@@ -226,37 +209,12 @@
     <MESSAGE value="&quot;Needs debugging and checking&quot;" />
     <option name="LAST_COMMIT_MESSAGE" value="&quot;Needs debugging and checking&quot;" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/array_list.py</url>
-          <line>101</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor />
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linked_list.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="132" column="18" lean-forward="true" selection-start-line="132" selection-start-column="18" selection-end-line="132" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="662" selection-start-line="662" selection-end-line="662" />
         </state>
       </provider>
     </entry>
@@ -267,20 +225,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/list_tests.py">
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
-          <folding>
-            <element signature="e#66#81#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="150">
+          <caret line="633" selection-start-line="633" selection-end-line="633" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/array_list.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1533">
-          <caret line="103" column="22" selection-start-line="103" selection-start-column="22" selection-end-line="103" selection-end-column="22" />
+        <state relative-caret-position="375">
+          <caret line="127" column="39" lean-forward="true" selection-start-line="127" selection-start-column="39" selection-end-line="127" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/linked_list.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="149" column="17" selection-start-line="149" selection-start-column="17" selection-end-line="149" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/list_tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="24" column="43" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
+          <folding>
+            <element signature="e#66#81#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

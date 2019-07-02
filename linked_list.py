@@ -146,7 +146,8 @@ def remove(lst, idx):
     """
     cur = lst.head
     if idx == 0:
-        value = cur.next.value
+        value = cur.value
+        lst.value = cur.next.value
         lst.head = cur.next
     elif idx > lst.size or idx < 0:
         raise IndexError
