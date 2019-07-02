@@ -62,6 +62,10 @@ def set(lst, idx, value):
     :param value: A value to place into the list
     :raise IndexError: If the index is out-of-bounds
     """
+    if type(idx) == str:
+        raise IndexError
+    if idx > lst.capacity or idx < 0:
+        raise IndexError
     lst.array[idx] = value
     return lst.array[idx]
 

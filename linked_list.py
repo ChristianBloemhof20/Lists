@@ -80,6 +80,10 @@ def set(lst, idx, value):
     :param value: A value to place into the list
     :raise IndexError: If the index is out-of-bounds
     """
+    if type(idx) == str:
+        raise IndexError
+    elif idx > lst.size or idx < 0:
+        raise IndexError
     cur = lst.head
     for i in range(idx):
         cur = cur.next
@@ -121,6 +125,8 @@ def add(lst, idx, value):
         node.next = lst.head
         lst.head = node
         lst.size += 1
+    elif type(idx) == str:
+        raise IndexError
     elif idx > lst.size or idx < 0:
         raise IndexError
     else:
