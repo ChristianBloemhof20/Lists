@@ -109,8 +109,8 @@ def add(lst, idx, value):
         raise IndexError
     elif idx < 0:
         raise IndexError
-    for i in range(idx, lst.size - 1):
-        lst.array[i - 1] = lst.array[i]
+    for i in range(idx, lst.size):
+        lst.array[i + 1] = lst.array[i]
     lst.array[idx] = value
     lst.size += 1
     return lst
@@ -130,7 +130,7 @@ def remove(lst, idx):
     if idx < 0 or idx > lst.capacity:
         raise IndexError
     value = lst.array[idx]
-    for i in range(idx + 1, lst.size - 1):
-        lst.array[i] = lst.array[i - 1]
+    for i in range(idx + 1, lst.size):
+        lst.array[i - 1] = lst.array[i]
     lst.size -= 1
     return value
