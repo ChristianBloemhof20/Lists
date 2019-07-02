@@ -64,8 +64,8 @@ class TestList(unittest.TestCase):
 
         self.assertRaises(ValueError, index, lst, 100)
         self.assertRaises(ValueError, index, lst, -5)
-        self.assertRaises(ValueError, remove, lst, 100)
-        self.assertRaises(ValueError, remove, lst, -5)
+        self.assertRaises(IndexError, remove, lst, 100)
+        self.assertRaises(IndexError, remove, lst, -5)
         self.assertRaises(IndexError, add, lst, 2000, 5)
         self.assertRaises(IndexError, add, lst, -2, -2)
 

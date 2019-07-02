@@ -76,14 +76,10 @@ def index(lst, value):
     :return: The index of the first occurrence of the value in the list
     :raise ValueError: If the value is not in the list
     """
-    i = 0
-    while True:
-            if lst.array[i] == value:
-                return i
-            elif i > lst.capacity:
-                raise ValueError
-            else:
-                i += 1
+    for i in range(lst.size):
+        if lst.array[i] == value:
+            return i
+    raise ValueError
 
 
 
@@ -124,9 +120,10 @@ def remove(lst, idx):
     :raise IndexError: If the index is out-of-bounds
     :return: The value that was removed
     """
-    value = lst.array[idx]
+
     if idx < 0 or idx > lst.capacity:
         raise IndexError
+    value = lst.array[idx]
     for i in range(idx + 1, lst.size - 1):
         lst.array[i] = lst.array[i - 1]
     lst.size -= 1

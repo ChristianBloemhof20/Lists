@@ -149,7 +149,7 @@ def remove(lst, idx):
         value = cur.next.value
         lst.head = cur.next
     elif idx > lst.size or idx < 0:
-        raise ValueError
+        raise IndexError
     else:
         for i in range(idx - 1):
             cur = cur.next
