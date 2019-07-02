@@ -105,6 +105,8 @@ def add(lst, idx, value):
             n_lst.array[i] = lst.array[i]
         lst.array = n_lst.array
         lst.capacity *= 2
+    elif type(idx) == str:
+        raise IndexError
     elif idx < 0:
         raise IndexError
     for i in range(idx, lst.size - 1):
