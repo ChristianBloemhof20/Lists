@@ -99,15 +99,16 @@ def add(lst, idx, value):
     :param value: A value to add to the list
     :raise IndexError: If the index is out-of-bounds
     """
-    if idx > lst.capacity:
-        n_lst = []*2*idx
-        n_lst.array = lst.array[:]
+    if lst.size >= lst.capacity:
+        n_lst = List(2*lst.capacity)
+        for i in range(lst.size):
+            n_lst.array[i] = lst.array[i]
         lst.array = n_lst.array
         lst.capacity *= 2
     elif idx < 0:
         raise IndexError
     for i in range(idx, lst.size - 1):
-        lst.array[i - 1] = lst.array[i]
+        lst.array[i] = lst.array[i + 1]
     lst.array[idx] = value
     lst.size += 1
     return lst
