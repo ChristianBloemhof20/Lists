@@ -23,7 +23,7 @@ class List:
 
     def __repr__(self):
         # TODO: Implement this method.
-        return 'List(Size = {}, Capacity = {})'.format(self.size, self.capacity)
+        return 'List(Size = {}, Capacity = {}, Array: {})'.format(self.size, self.capacity, self.array)
 
 
 def size(lst):
@@ -110,7 +110,7 @@ def add(lst, idx, value):
     elif idx < 0:
         raise IndexError
     for i in range(idx, lst.size - 1):
-        lst.array[i] = lst.array[i + 1]
+        lst.array[i - 1] = lst.array[i]
     lst.array[idx] = value
     lst.size += 1
     return lst

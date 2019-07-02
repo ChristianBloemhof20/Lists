@@ -17,13 +17,13 @@ class TestList(unittest.TestCase):
         add(lst, 1, 2)
         add(lst, 1, 0)
         set(lst, 1, 1)
+        print(lst)
 
         self.assertEqual(size(lst), 3)
         self.assertEqual(get(lst, 1), 1)
         self.assertEqual(remove(lst, 1), 1)
         self.assertEqual(index(lst, 0), 0)
         self.assertEqual(remove(lst, 0), 0)
-        print(lst)
 
 
     def test_02_Equality(self):
