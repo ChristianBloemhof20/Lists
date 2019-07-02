@@ -6,7 +6,7 @@ import unittest
 
 # TODO: Leave one of these commented and one uncommented, depending on which
 #       implementation you want to test.
-#from array_list import *
+from array_list import *
 from linked_list import *
 
 
@@ -22,7 +22,8 @@ class TestList(unittest.TestCase):
         self.assertEqual(size(lst), 3)
         self.assertEqual(get(lst, 1), 1)
         self.assertEqual(remove(lst, 1), 1)
-        self.assertEqual(index(lst, 2), 2)
+        self.assertEqual(index(lst, 0), 0)
+        print(lst)
 
 
     def test_02(self):
@@ -60,6 +61,11 @@ class TestList(unittest.TestCase):
         add(lst, 0, 0)
         add(lst, 0, 0)
         add(lst, 0, 0)
+
+        self.assertEqual(index(lst, 100), ValueError)
+        self.assertEqual(index(lst, -5), IndexError)
+        self.assertEqual(remove(lst, 100), IndexError)
+        self.assertEqual(remove(lst, -5), IndexError)
 
 
 

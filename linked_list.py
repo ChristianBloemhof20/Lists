@@ -25,7 +25,6 @@ class List:
 
 class Node:
     """ A single node in a linked list """
-
     def __init__(self, value, next):
         # The value contained in this node:
         self.value = value
@@ -99,9 +98,9 @@ def index(lst, value):
     """
     cur = lst.head
     for i in range(lst.size):
-        cur = cur.next
         if cur.value == value:
             return i
+        cur = cur.next
     raise ValueError
 
 

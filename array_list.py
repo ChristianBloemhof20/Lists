@@ -99,11 +99,13 @@ def add(lst, idx, value):
     :param value: A value to add to the list
     :raise IndexError: If the index is out-of-bounds
     """
-    if idx > len(lst.array):
+    if idx > lst.capacity:
         n_lst = []*2*idx
         n_lst.array = lst.array[:]
         lst.array = n_lst.array
         lst.capacity *= 2
+    elif idx < 0:
+        raise IndexError
     for i in range(idx, lst.size - 1):
         lst.array[i - 1] = lst.array[i]
     lst.array[idx] = value
@@ -122,6 +124,8 @@ def remove(lst, idx):
     :return: The value that was removed
     """
     value = lst.array[idx]
+    if idx < 0 or idx > lst.capacity:
+        raise IndexError
     for i in range(idx + 1, lst.size - 1):
         lst.array[i] = lst.array[i - 1]
     lst.size -= 1
