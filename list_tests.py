@@ -42,6 +42,7 @@ class TestList(unittest.TestCase):
         lst = List()
         lst2 = List()
         lst3 = List()
+        lst4 = List()
 
         add(lst, 0, 2)
         add(lst, 1, 1)
@@ -57,10 +58,15 @@ class TestList(unittest.TestCase):
         add(lst2, 2, 2)
         remove(lst2, 1)
         remove(lst2, 1)
+        add(lst4, 0, 1)
+        add(lst4, 1, 1)
+        add(lst4, 2, 2)
+        remove(lst4, 1)
+        remove(lst4, 1)
 
-        self.assertEqual(size(lst), 1)
-        lst == lst2
-        self.assertNotEqual(lst, lst3)
+        print(lst == lst2)
+        print(lst == lst3)
+        print(lst == lst4)
 
     def test_03_Errors(self):
         lst = List()
@@ -88,7 +94,6 @@ class TestList(unittest.TestCase):
         self.assertRaises(IndexError, get, lst, 'a')
         self.assertRaises(IndexError, get, lst, 20000)
         self.assertRaises(IndexError, get, lst, -2)
-
 
 
 
