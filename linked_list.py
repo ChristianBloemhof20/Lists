@@ -64,6 +64,10 @@ def get(lst, idx):
     :return: The element in the list at the index
     :raise IndexError: If the index is out-of-bounds
     """
+    if type(idx) == str:
+        raise IndexError
+    elif idx > lst.size or idx < 0:
+        raise IndexError
     cur = lst.head
     for i in range(idx):
         cur = cur.next

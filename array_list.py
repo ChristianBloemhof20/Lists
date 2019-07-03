@@ -16,10 +16,13 @@ class List:
 
     def __eq__(self, other):
         # TODO: Implement this method.
-        for i in range(self.size):
-            if self.array[i] != other.array[i]:
-                return False
-        return type(self) == type(other) and self.size == other.size
+        if type(self) == type(other) and self.size == other.size:
+            for i in range(self.size):
+                if self.array[i] != other.array[i]:
+                    return False
+            return True
+        else:
+            return False
 
     def __repr__(self):
         # TODO: Implement this method.
@@ -48,6 +51,10 @@ def get(lst, idx):
     :return: The element in the list at the index
     :raise IndexError: If the index is out-of-bounds
     """
+    if type(idx) == str:
+        raise IndexError
+    elif idx > lst.capacity or idx < 0:
+        raise IndexError
     value = lst.array[idx]
     return value
 
@@ -109,8 +116,11 @@ def add(lst, idx, value):
         raise IndexError
     elif idx < 0:
         raise IndexError
+    temp = lst.array[idx]
     for i in range(idx, lst.size):
-        lst.array[i + 1] = lst.array[i]
+        temp2 = lst.array[i + 1]
+        lst.array[i + 1] = temp
+        temp = temp2
     lst.array[idx] = value
     lst.size += 1
     return lst

@@ -11,6 +11,18 @@ from array_list import *
 
 
 class TestList(unittest.TestCase):
+    def test00_shift(self):
+        lst = List()
+        add(lst, 0, 5)
+        add(lst, 0, 4)
+        add(lst, 0, 3)
+        add(lst, 0, 2)
+        add(lst, 0, 1)
+        add(lst, 0, 0)
+        remove(lst, 3)
+
+        self.assertEqual(get(lst, 1), 1)
+        self.assertEqual(get(lst, 3), 4)
     def test01_simple_list(self):
         lst = List()
         add(lst, 0, 0)
@@ -73,6 +85,9 @@ class TestList(unittest.TestCase):
         self.assertRaises(IndexError, add, lst, 2000, 5)
         self.assertRaises(IndexError, add, lst, -2, -2)
         self.assertRaises(IndexError, add, lst, 'z', 0)
+        self.assertRaises(IndexError, get, lst, 'a')
+        self.assertRaises(IndexError, get, lst, 20000)
+        self.assertRaises(IndexError, get, lst, -2)
 
 
 
