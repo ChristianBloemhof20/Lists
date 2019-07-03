@@ -140,7 +140,6 @@ def add(lst, idx, value):
         node.next = cur.next
         cur.next = node
         lst.size += 1
-        return lst
 
 
 
@@ -166,6 +165,6 @@ def remove(lst, idx):
             cur = cur.next
         value = cur.next.value
         cur.next = cur.next.next
-        lst.size -= 1
+    lst.size -= 1
     return value
 

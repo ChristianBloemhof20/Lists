@@ -6,8 +6,8 @@ import unittest
 
 # TODO: Leave one of these commented and one uncommented, depending on which
 #       implementation you want to test.
-from array_list import *
-#from linked_list import *
+#from array_list import *
+from linked_list import *
 
 
 class TestList(unittest.TestCase):
@@ -19,7 +19,7 @@ class TestList(unittest.TestCase):
         add(lst, 0, 2)
         add(lst, 0, 1)
         add(lst, 0, 0)
-        remove(lst, 3)
+        remove(lst, 0)
 
         self.assertEqual(get(lst, 1), 1)
         self.assertEqual(get(lst, 3), 4)
