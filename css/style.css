@@ -1,0 +1,50 @@
+* {
+   box-sizing: border-box;
+}
+
+html, body {
+   margin: 0;
+}
+
+.main-nav {
+   display: flex;
+   background-color: black;
+   color: white;
+   padding: 5px;
+   font-size: 24px;
+   padding-right: 5vw;
+}
+
+.main-nav ul {
+   text-align: end;
+}
+
+.nav ul {
+   flex-grow: 1;
+   align-items: center;
+   list-style-type: none;
+}
+
+.nav li {
+   display: inline;
+   padding-left: 20px;
+}
+
+.nav a {
+   text-decoration: none;
+   color: white;
+}
+
+.nav a:hover {
+   color: red;
+}
+
+.body-text {
+   padding: 10px;
+   font-size: 20px;
+}
+
+#no-reading {
+   text-align: center;
+   font-style: italic;
+}

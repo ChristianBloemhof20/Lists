@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/aboutMe.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="nav main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutMe.html">About Me</a></li>
+                <li><a href="portfolio.html">Portfolio</a><li>
+            </ul>
+        </nav>
+        <h1 class="banner-words">Christian's Portfolio<h1>
+    </header>
+
+    <br><br><br>
+
+    <div class="my_projects">
+        <div class="project">
+            <h2 class = "project_name">Twitter Bot</h2>
+            <p>In this project, I created a bot that would grab     data from a database on my personal device, log onto    twitter, tweet that data, then log out.  This project  was done using the Selenium library in Python.  Check    out the code on my github <a href="https://github.com/ChristianBloemhof20/TwitterBot" target="_blank">TwitterBot</a>.  The     database on my personal device that the bot accesses    was created using SQL. This process is automated, in   the video I manually start up the program for video   purposes but in actuality the program runs on its own.    The way that I did this was by converting the .py file    to a .exec file and setting a time on my calendar to   open that .exec file twice a week.</p>
+
+            <video width="600" controls>
+                <source src="/Videos/Instagram_Bot.mp4" type=video/mp4>
+            </video>
+
+            <br>
+
+            <h3>Issues and Improvements</h3>
+
+            <p>What would a project be without things to be made    better (even if if never happens).</p>
+
+            <ol>
+                <li>One of the main issues I had was running this.  I used a calandar to set the time for which this program would be run.  While this did work, it also seemed to create a lot of undesired inefficiencies.  One issue was that if my laptop was not on at the desired run-time, the program would not run until the laptop was open.  Another issue is that if I was using my laptop at the run-time, then I would be interrupted by the launching of the executable file.
+
+                    <br><br>
+
+                    A solution that I came up with for this lies within the raspberry pi I just got.  If I can move all the code and SQL to the pi and run it using crontab then it would be always running and much more efficient.
+                </li>
+
+                <br>
+
+                <li>If this was to be something that a company  uses, the database would need to be larger. Mine     only contains 25 different possible tweets. The bot     could also extract data from trending and stuff     like that to be more representative of what is  actually happening on twitter and not just randomly  tweeting.</li>
+
+                <br>
+
+                <li>It was actually difficult to use Selenium, I    was only able to do this project because of my     knowledge with CSS.  If I tried showing this to     someone who had no knowledge of CSS classes and     things like that, it would take a lot of time for   them to get it.  I'm sure there might be a library    already out there for logging onto Twitter via     Python, but a future project for myself could be    creating that library.  I could create a library so    if someone wants to, say, log on they input twitter.   login("...") and that would select the login box   and enter the username and password and then enter    it all.</li>
+            </ol>
+
+        </div>
+        <br><br>
+        <div class="project">
+            <h2 class="project_name">Data Structures</h2>
+            <p>This project is actually a series of labs I had to do for a class.  I wanted to include it to my portfolio to show my knowledge and understanding of <a href="https://github.com/ChristianBloemhof20/Lists" target="_blank" >Data Structures</a>.  In this class, we had to use Python to create our own data structures.  I have included the code for the linked list and the array on my github, but I also created a stack, queue, sorter, bst, dictionary, and graphs.  I understand that a lot of companies are looking for people with skills in data structures, so I hope this helps build my credibility in data structures.  This labs were also done over a year ago, so I have grown a lot since making these and my knowledge of data structures has increased.</p>
+        </div>
+
+        <br><br>
+        <h2>I plan to add more projects that I have done before, but for the sake of time this is all I will include for now.  My goal right now is go get this website up and applications in before I add more.  If you have questions on projects, feel free to ask.</h2>
+    </div>
+    
+        <footer class="footer-main">
+            <div class="main-footer-container">
+                <h1>Christian Bloemhof</h1>
+                <ul class="footer-nav nav">
+                    <li>
+                        <a href="https://github.com/ChristianBloemhof20" target="_blank"><img   src="/Photos/AboutMe/github.png"
+                                alt="Github" id="github"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/ christian_bloemhof/" target="_blank"><img
+                                src="/Photos/AboutMe/instagram.png"     alt="Instagram" id="insta"></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+</body>
+</html>
